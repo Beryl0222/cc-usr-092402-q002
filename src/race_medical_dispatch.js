@@ -1,10 +1,2 @@
-// race_medical_dispatch 领域资料的基础结构。
-
-export const EVENT_KINDS = Object.freeze(["EVENT_RISK_FILED", "RESOURCE_DECLARED", "PLAN_APPROVED", "INCIDENT_ESCALATED", "HANDOFF_COMPLETED"]);
-export const REQUIRED_FIELDS = Object.freeze(["event_id", "kind", "occurred_at", "subject_id", "payload"]);
-
-export function validateEvent(record) {
-  const problems = REQUIRED_FIELDS.filter((name) => !(name in record));
-  if (!EVENT_KINDS.includes(record.kind)) problems.push("kind");
-  return problems;
-}
+// 兼容旧入口：事件目录已扩展，统一由 events 模块维护。
+export { EVENT_KINDS, REQUIRED_FIELDS, validateEvent, VersionGraph } from "./events.js";
