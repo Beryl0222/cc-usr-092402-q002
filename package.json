@@ -1,0 +1,11 @@
+{
+  "name": "race-medical-dispatch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "群众赛事医疗资源编排领域资料",
+  "scripts": {
+    "build": "node --check src/race_medical_dispatch.js",
+    "test": "node --test"
+  }
+}
