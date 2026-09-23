@@ -1,0 +1,14 @@
+{
+  "event_id": "sample-drill-001",
+  "kind": "DRILL_RECOMMENDATION_FILED",
+  "occurred_at": "2026-09-23T09:10:00+08:00",
+  "subject_id": "plan-alpha",
+  "payload": {
+    "plan_id": "plan-alpha",
+    "based_on_version": 1,
+    "suggestions": [
+      { "type": "ASSIGN_IDLE_RESOURCE", "segment_id": "S1", "resource_id": "V4", "eta_minutes": 3 }
+    ],
+    "note": "虚构资料，仅用于格式核对"
+  }
+}

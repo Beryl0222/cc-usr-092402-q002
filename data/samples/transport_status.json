@@ -1,0 +1,13 @@
+{
+  "event_id": "sample-ts-001",
+  "kind": "TRANSPORT_STATUS_RECORDED",
+  "occurred_at": "2026-09-23T10:40:00+08:00",
+  "subject_id": "T1",
+  "payload": {
+    "source_id": "dispatch",
+    "seq": 5,
+    "transport_id": "T1",
+    "status": "HANDED_OVER",
+    "note": "虚构资料，仅用于格式核对"
+  }
+}
